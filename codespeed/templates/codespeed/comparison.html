@@ -17,7 +17,7 @@
 {% block body %}
 <div id="sidebar">
 <div class="sidebox">
-  <div class="boxhead"><h2>Environments</h2></div>
+  <div class="boxhead"><h2>Members</h2></div>
   <div class="boxbody">
     <ul>{% for env in enviros %}
       <li title="{{ env.os }}, {{ env.cpu }}">
@@ -28,7 +28,7 @@
   </div>
 </div>
 <div id="executable" class="sidebox">
-  <div class="boxhead"><h2>Executables</h2></div>
+  <div class="boxhead"><h2>Metrics</h2></div>
   <div class="boxbody">
     {% for proj, executable in executables.items %}
     <ul><a href="#" class="togglefold">{{ proj }}</a> <a href="#" class="checkall">(All</a>, <a href="#" class="uncheckall">None)</a>

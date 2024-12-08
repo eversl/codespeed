@@ -18,7 +18,7 @@
 {% block body %}
 <div id="sidebar">
 <div class="sidebox">
-  <div class="boxhead"><h2>Environment</h2></div>
+  <div class="boxhead"><h2>Member</h2></div>
   <div class="boxbody">
     <ul>
     {% for env in environments %}
@@ -31,7 +31,7 @@
   </div>
 </div>
 <div id="executable" class="sidebox">
-  <div class="boxhead"><h2>Executables</h2></div>
+  <div class="boxhead"><h2>Metric</h2></div>
   <div class="boxbody">
     <ul class="clearfix">{% for proj, execs in executables.items %}
       <ul>{{ proj }} <a href="#" class="checkall">(All</a>, <a href="#" class="uncheckall">None)</a>

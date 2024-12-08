@@ -13,7 +13,7 @@
 {% block body %}
 <div id="sidebar">
 <div class="sidebox">
-  <div class="boxhead"><h2>Environment</h2></div>
+  <div class="boxhead"><h2>Member</h2></div>
   <div class="boxbody">
     <ul>
     {% for env in environments %}
@@ -27,7 +27,7 @@
 </div>
 
 <div id="executable" class="sidebox">
-  <div class="boxhead"><h2>Executable</h2></div>
+  <div class="boxhead"><h2>Metric</h2></div>
   <div class="boxbody">
     {% if executables|length > 1 %}<ul>{% endif %}{% for proj, execs in executables.items %}
       <ul>{% if executables|length > 1 %}{{ proj }}{% endif %}{% for exec in execs|dictsort:"name" %}
