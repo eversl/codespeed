@@ -8,8 +8,8 @@ BASEDIR = os.path.abspath(os.path.dirname(__file__))
 TOPDIR = os.path.split(BASEDIR)[1]
 
 #: The directory which should contain checked out source repositories:
-# REPOSITORY_BASE_PATH = os.path.join(BASEDIR, "repos")
-REPOSITORY_BASE_PATH = "/var/opt/gitlab/git-data/repositories/@hashed/d4/73/d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35.git"
+REPOSITORY_BASE_PATH = os.path.join(BASEDIR, "repos")
+
 ADMINS = (
     ('Leon Evers', 'leon@millcomputing.com'),
 )
@@ -94,6 +94,9 @@ DEF_BENCHMARK = 'coremark'
 
 ALLOWED_HOSTS = [
     u'y.millcomputing.com',  # Allow domain and subdomains
-    '127.0.0.1'
+    u's11.millcomputing.com',
+    '127.0.0.1',
+    'localhost',
+    'mill-22-4',
 ]
 WEBSITE_NAME = "Mill Speed Site"  # This name will be used in the reports RSS feed

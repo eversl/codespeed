@@ -4,7 +4,7 @@ branches:
     - master
 env:
   global:
-    - DJANGO_SETTINGS_MODULE=sample_project.settings
+    - DJANGO_SETTINGS_MODULE=mill.settings
 matrix:
   include:
     - python: "2.7"
